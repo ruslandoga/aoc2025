@@ -13,16 +13,17 @@ defmodule Day2 do
 
   defp process_input(input) do
     input
+    |> Enum.map(&Function.identity/1)
   end
 
   @doc """
   Solutions:
 
       iex> part1(example_input())
-      2
+      []
 
       iex> part1(input())
-      390
+      []
 
   """
   def part1(input) do
@@ -34,10 +35,10 @@ defmodule Day2 do
   Solutions:
 
       iex> part2(example_input())
-      4
+      []
 
       iex> part2(input())
-      439
+      []
 
   """
   def part2(input) do

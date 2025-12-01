@@ -13,31 +13,36 @@ defmodule Day1 do
 
   defp process_input(input) do
     input
+    |> Enum.map(&String.trim/1)
   end
 
   @doc """
   Solutions:
 
       iex> part1(example_input())
-      24000
+      []
 
       iex> part1(input())
-      6939420
+      []
 
   """
   def part1(input \\ input()) do
+    input
+    |> process_input()
   end
 
   @doc """
   Solutions:
 
       iex> part2(example_input())
-      31
+      []
 
       iex> part2(input())
-      21142653
+      []
 
   """
   def part2(input) do
+    input
+    |> process_input()
   end
 end
